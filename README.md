@@ -11,10 +11,14 @@ This script is launch three services. The first one is the main app, the second 
 
 When you start the project, you can see how the main app sends request to the other services to get information and also how the backend microservices interact with each other.
 
-This code is develop in PHP to the backend microservices and HTML + JS + CSS to the main app.
+This code is develop in PHP to the backend `microservices` and HTML + JS + CSS to the main app.
 
 ## Services
 
-  # Main app
+# Main app
+  - Apache
+  - HTML, Javascript, CSS
+
+
 
   
