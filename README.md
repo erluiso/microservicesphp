@@ -31,6 +31,15 @@ This code is develop in PHP to the backend `microservices` and HTML + JS + CSS t
 
 ## How start
 
+Install Docker and download all files of this project in a localfolder. In linux or windows open a terminal and go to the project folder.
+
+The next step is to execute this code to create the images and containers in Docker and launch the services:
+
+```Dockerfile
+
+docker-compose up -d
+
+```
 
 
   
