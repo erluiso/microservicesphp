@@ -1,0 +1,9 @@
+2025-10-03 08:32:09 Deleting logs in email microservice
+2025-10-03 08:32:09 Logs deleted
+2025-10-03 08:48:42 A GET request has been received: https://127.0.0.3/emails/createTable
+2025-10-03 08:48:42 Creating email table
+2025-10-03 08:48:42 Email table created successfully
+2025-10-03 08:49:44 A GET request has been received: https://127.0.0.3/emails/3
+2025-10-03 08:49:44 Saving user email: george@gmail.com
+2025-10-03 08:49:44 Email saved!
+2025-10-03 08:49:44 Emails sended to george@gmail.com

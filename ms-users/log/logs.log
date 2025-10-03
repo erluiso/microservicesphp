@@ -1,0 +1,20 @@
+2025-10-03 08:32:09 Deleting logs in users microservice
+2025-10-03 08:32:09 Logs deleted
+2025-10-03 08:48:19 A GET request has been received: https://127.0.0.2/users/createTable
+2025-10-03 08:48:19 Creating a table and inserting users
+2025-10-03 08:48:19 Database created with 5 users successfully
+2025-10-03 08:48:51 A GET request has been received: https://127.0.0.2/users
+2025-10-03 08:48:51 Searching all users
+2025-10-03 08:48:51 Found 5 users
+2025-10-03 08:49:09 A GET request has been received: https://127.0.0.2/users/2
+2025-10-03 08:49:09 Searching user width id: 2
+2025-10-03 08:49:09 User found with id: 2
+2025-10-03 08:49:09 2,Olivia,olivia@gmail.com,2025-10-03 08:48:19
+2025-10-03 08:49:44 A GET request has been received: https://user-service/users/3
+2025-10-03 08:49:44 Searching user width id: 3
+2025-10-03 08:49:44 User found with id: 3
+2025-10-03 08:49:44 3,George,george@gmail.com,2025-10-03 08:48:19
+2025-10-03 08:49:44 A GET request has been received: https://user-service/users/3
+2025-10-03 08:49:44 Searching user width id: 3
+2025-10-03 08:49:44 User found with id: 3
+2025-10-03 08:49:44 3,George,george@gmail.com,2025-10-03 08:48:19

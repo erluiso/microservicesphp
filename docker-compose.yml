@@ -1,0 +1,60 @@
+services:
+  app:
+    container_name: app
+    build: ./app
+    restart: always
+    ports:
+      - "127.0.0.1:80:80"
+    volumes:
+      - .:/var/www/html
+
+  user-service:
+    container_name: microservice-users
+    build: ./ms-users
+    restart: always
+    volumes:
+      - ./ms-users:/var/www/html
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=mydatabase
+      - APACHE_PORT=11000
+    depends_on:
+      - mysql
+    ports:
+      - "127.0.0.2:80:80"
+    
+  email-service:
+    container_name: microservice-emails
+    build: ./ms-emails
+    restart: always
+    volumes:
+      - ./ms-emails:/var/www/html
+    environment:
+      - MYSQL_HOST=mariadb
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=emails
+    depends_on:
+      - mariadb
+    ports:
+      - "127.0.0.3:80:80"
+
+  mariadb:
+    container_name: mariadb
+    image: mariadb:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_USER: 'root'
+      MYSQL_PASSWORD: 'root'
+      MYSQL_DATABASE: 'emails'
+
+  mysql:
+    container_name: mysql
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydatabase

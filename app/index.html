@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Last-Modified" content="0">
+        <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <link rel="stylesheet" href="resources/stylesheet.css">
+    </head>
+    <body>
+        <div id="mainTitle"> 
+            <span id="title">Main App (http://127.0.0.1)<br><br></span>
+        </div>
+
+        <div style="height:400px;">
+            <!-- Create users form -->
+            <div class="container">
+                <span id="title"><br>Step #1 - Create table and load the initial users<br><br></span>
+                <button id="loadUsers">Create users table and insert users</button>
+                <button id="loadEmails">Create emails table</button>
+                <div id="result1"></div>
+            </div>
+            
+            <!-- List users option -->
+            <div class="container">
+                <span id="title"><br>Step #2 - List all users loaded<br><br></span>
+                <button id="listUsers">List all users</button>
+                <div id="result2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td style="width:50px">Id</td>
+                                <td style="width:75px">User</td>
+                                <td style="width:150px">Email</td>
+                                <td style="width:150px">Date</td>
+                                <td style="width:150px"></td>
+                            </tr>
+                        </thead>
+                        <tbody id="users"></tbody>
+                    </table>
+                </div>
+            </div>
+        
+            <!-- Load user by id -->
+            <div class="container">
+                <span id="title"><br>Step #3 - Load user data by user id<br><br></span>
+                <div class="container2">
+                    <div class="class1">
+                        Insert the user id
+                    </div>
+                    <div class="class2">
+                        <input type="text" id="userId">
+                    </div>
+                    <div class="class3">
+                        <button id="searchUser">Search user</button>
+                    </div>
+                </div>
+                <div id="result3"></div>
+            </div>
+        </div>
+
+        <!-- Users microservice log -->
+        <div class="logsContainer">
+            <div id="msUsersLogsDiv">
+                <div id="logTitle">
+                    <span id="title">Logs -> Users microservice (http://127.0.0.2)</span>
+                </div>
+
+                <iframe id="msUsersLogs"></iframe>
+
+                <div class="resetButtonDiv">
+                    <button id="resetLogsUsersMs">Delete all microservice logs</button>  
+                </div>
+            </div>
+
+            <!-- Emails microservice log -->
+            <div id="msUsersLogsDiv">
+                <div id="logTitle">
+                    <span id="title">Logs -> Emails microservice (http://127.0.0.3)</span>
+                </div>
+
+                <iframe id="msEmailsLogs"></iframe>
+
+                <div class="resetButtonDiv">
+                    <button id="resetLogsEmailsMs">Delete all microservice logs</button>  
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/script.js"></script>
+    </body>
+</html>
