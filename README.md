@@ -9,20 +9,27 @@ You will need to install Docker (Docker compose) to launch the diferents service
 
 This script is launch three services. The first one is the main app, the second one is a microservice to manage users, and the third one is a microservice to manage the sending of emails.
 
-When you start the project, you can see how the main app sends request to the other services to get information and also how the backend microservices interact with each other.
+When you start the project, you can see how the main app sends request to the other services to get information and also how the backend microservices interact with each other with diferents data bases.
 
 This code is develop in PHP to the backend `microservices` and HTML + JS + CSS to the main app.
 
 ## Services
 
-    ### Main app
-      - Apache
-      - HTML, Javascript, CSS
-    ### Users microservice
-      - Apache
-      - PHP 7.4
-      - MySQL
-    ### Emails microservice
+### Main app
+- Apache (lastest)
+- HTML, Javascript, CSS
+
+### Users microservice
+- Apache (lastest)
+- PHP 7.4
+- MySQL
+
+### Emails microservice
+- Apache (lastest)
+- PHP 7.4
+- MariaDB
+
+## How start
 
 
 
