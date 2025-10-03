@@ -41,5 +41,6 @@ docker-compose up -d
 
 ```
 
+Open a browser and open the main app with this url: http://127.0.0.1/app
 
   
