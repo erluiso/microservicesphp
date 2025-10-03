@@ -15,14 +15,14 @@ This code is develop in PHP to the backend `microservices` and HTML + JS + CSS t
 
 ## Services
 
-### Main app
-  - Apache
-  - HTML, Javascript, CSS
-### Users microservice
-  - Apache
-  - PHP 7.4
-  - MySQL
-### Emails microservice
+    ### Main app
+      - Apache
+      - HTML, Javascript, CSS
+    ### Users microservice
+      - Apache
+      - PHP 7.4
+      - MySQL
+    ### Emails microservice
 
 
 
