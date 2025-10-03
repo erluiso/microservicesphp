@@ -1,3 +1,8 @@
+[![Downloaded GitHub Releases](https://img.shields.io/github/downloads/mlocati/docker-php-extension-installer/total?label=Downloaded%20releases)](https://github.com/mlocati/docker-php-extension-installer/releases)
+[![Docker Hub pulls](https://img.shields.io/docker/pulls/mlocati/php-extension-installer?label=Docker%20Hub%20pulls)](https://hub.docker.com/r/mlocati/php-extension-installer)
+[![GitHub Registry pulls](https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/refs/heads/assets/resources/ghcr-badge.svg)](https://github.com/mlocati/docker-php-extension-installer/pkgs/container/php-extension-installer)
+[![Test recent](https://github.com/mlocati/docker-php-extension-installer/actions/workflows/test-recent-extensions.yml/badge.svg)](https://github.com/mlocati/docker-php-extension-installer/actions/workflows/test-recent-extensions.yml)
+
 # Microservices in PHP + Docker
 Example of microservices in PHP + Docker
 
