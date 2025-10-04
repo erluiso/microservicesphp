@@ -6,6 +6,9 @@
     {
         protected $connection = null;
 
+        /**
+         * Contruct
+         */
         public function __construct()
         {
             try 
@@ -19,20 +22,31 @@
             } 
             catch (Exception $e) 
             {
-                throw new Exception($e->getMessage());   
+                throw $e;   
             }			
         }
 
+        /**
+         * Creates the connection
+         */
         public function getConnection()
         {
             return $this->connection;
         }
 
+        /**
+         * Executes a query
+         * @param query
+         */
         public function executeStatement($query)
         {
             try 
             {
-                $stmt = $this->connection->prepare($query);
+                if(!$stmt = $this->connection->prepare($query))
+                {
+                    throw new Exception("Error to execure query");
+                };
+
                 $stmt->execute();
                 $result = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);				
                 $stmt->close();
@@ -40,7 +54,7 @@
             } 
             catch(Exception $e) 
             {
-                throw New Exception($e->getMessage());
+                throw $e;
             }
         }
     }

@@ -46,16 +46,23 @@ document.getElementById("searchUser").onclick = function()
 {
     var inputVal = document.getElementById("userId").value;
 
-    if(!inputVal.trim().length || isNaN(inputVal))
+    if(inputVal === "")
     {
-        alert("Please, insert a user id valid.");
+        alert("Please write a valid user id");
         return;
     }
-    
+
     var response = sendRequest(URL_MICROSERVICE_1 + "/users/" + inputVal);
 
-    document.getElementById("result3").innerHTML = response;
     refreshLogs();
+
+    if(JSON.parse(response)["error"]["code"] == 1)
+    {
+        alert(JSON.parse(response)["error"]["message"]);
+        return;
+    }
+
+    document.getElementById("result3").innerHTML = response;
 }
 
 /**
@@ -63,10 +70,17 @@ document.getElementById("searchUser").onclick = function()
  */
 document.getElementById("loadUsers").onclick = function()
 {
-    var response = sendRequest(URL_MICROSERVICE_1 + "/users/createTable");
+    var response = JSON.parse(sendRequest(URL_MICROSERVICE_1 + "/users/createTable"));
 
-    document.getElementById("result1").innerHTML = response;
     refreshLogs();
+
+    if(response["error"]["code"] == 1)
+    {
+        console.log(response["error"]["message"]);
+        return;
+    }
+
+    document.getElementById("result1").innerHTML = response["message"];
 };
 
 /**
@@ -76,9 +90,17 @@ document.getElementById("listUsers").onclick = function()
 {
     var response = JSON.parse(sendRequest(URL_MICROSERVICE_1 + "/users"));
 
+    refreshLogs();
+
+    if(response["error"]["code"] === 1)
+    {
+        console.log(response["error"]["message"]);
+        return;
+    }
+    
     var table = "";
 
-    response.forEach(function (user) 
+    response["users"].forEach(function (user) 
     {
         table += "<tr>";
         table += "  <td>"+user.id+"</td>";
@@ -90,7 +112,6 @@ document.getElementById("listUsers").onclick = function()
     });
 
     document.getElementById("users").innerHTML = table;
-    refreshLogs();
 }
 
 /**
@@ -114,35 +135,31 @@ function sendRequest($url)
 }
 
 /**
- * Return if a value is a number
- */
-function isNumber(value) 
-{
-    return !isNaN(value) && typeof value === 'number';
-}
-
-/**
  * Send a welcome email
  */
 function sendEmail(userId)
 {
-    var response = sendRequest(URL_MICROSERVICE_2 + "/emails/"+userId);
-
-    if(response === "ko")
-    {
-        alert("Error to send email");
-    }
+    var response = JSON.parse(sendRequest(URL_MICROSERVICE_2 + "/emails/"+userId));
 
     refreshLogs();
+
+    if(response["error"]["code"] === 1)
+    {
+        console.log(response["error"]["message"]);
+        return;
+    }
+
+    console.log(response["message"]);
 }
 
 /**
- * Create the initial table in the BBDD
+ * Create the initial email table in the BBDD
  */
 document.getElementById("loadEmails").onclick = function()
 {
     var response = sendRequest(URL_MICROSERVICE_2 + "/emails/createTable");
 
     document.getElementById("result1").innerHTML = response;
+
     refreshLogs();
 };

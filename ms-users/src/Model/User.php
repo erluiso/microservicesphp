@@ -20,6 +20,7 @@
 
         /**
          * Get user by id
+         * @param id
          */
         public function getUser($id)
         {
@@ -32,18 +33,20 @@
                 if(empty($user))
                 {
                      $this->log->save("No user found with id: ".$id);
+                     return [];
                 }
                 else
                 {
                     $this->log->save("User found with id: ".$id);
                     $this->log->save(implode(",",$user[0]));
+                    return $user[0];
                 }
-
-                return $user;
             } 
             catch(Exception $e) 
             {
-                throw New Exception( $e->getMessage() );
+                $this->log->save("Error to get user with id: ".$id);
+                $this->log->save($e->getMessage());
+                throw $e;
             }
         }
 
@@ -64,7 +67,7 @@
             } 
             catch(Exception $e)
             {
-                throw New Exception( $e->getMessage() );
+                throw $e;
             }
         }
 
@@ -96,7 +99,7 @@
             } 
             catch (Exception $e) 
             {
-                throw new Exception($e->getMessage());
+                throw $e->getMessage();
             }
         }
     }

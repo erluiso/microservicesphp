@@ -11,7 +11,7 @@
     if ($uri[1] === 'users') 
     {
         // We create UserModel instance
-        $user = new User();
+        $userModel = new User();
 
         switch ($method) 
         {
@@ -24,19 +24,72 @@
                     //Load table
                     if($uri[2] === "createTable")
                     {  
-                        $user->createTable();
-                        echo "Table and users created successfully!";
+                        try
+                        {
+                            $userModel->createTable();
+                            echo json_encode(
+                                [
+                                    "error" => ["code" => 0,"message" => ""],
+                                    "message" => "Table and users created successfully!"
+                                ]
+                            );
+                        }
+                        catch(Exception $e)
+                        {
+                            echo json_encode(
+                                [
+                                    "error" => ["code" => 1,"message" => $e->getMessage()],
+                                    "message" => ""
+                                ]
+                            );
+                        }
                     }
                     else
                     {
                         //Search user by id
-                        echo json_encode($user->getUser($uri[2]));
+                        try
+                        {
+                            $user = $userModel->getUser($uri[2]);
+                            echo json_encode(
+                                [
+                                    "error" => ["code" => 0,"message" => ""],
+                                    "user" => $user
+                                ]
+                            );
+                        }
+                        catch(Exception $e)
+                        {
+                            echo json_encode(
+                                [
+                                    "error" => ["code" => 1,"message" => $e->getMessage()],
+                                    "user" => []
+                                ]
+                            );
+                        }
                     }
                 }
                 else
                 {
                     //Get all users
-                    echo json_encode($user->getUsers());
+                    try
+                    {
+                        $users = $userModel->getUsers();
+                        echo json_encode(
+                            [
+                                "error" => ["code" => 0,"message" => ""],
+                                "users" => $users
+                            ]
+                        );
+                    }
+                    catch(Exception $e)
+                    {
+                        echo json_encode(
+                            [
+                                "error" => ["code" => 1,"message" => $e->getMessage()],
+                                "users" => []
+                            ]
+                        );
+                    }
                 }
 
             break;

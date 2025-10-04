@@ -1,20 +1,308 @@
-2025-10-03 08:32:09 Deleting logs in users microservice
-2025-10-03 08:32:09 Logs deleted
-2025-10-03 08:48:19 A GET request has been received: https://127.0.0.2/users/createTable
-2025-10-03 08:48:19 Creating a table and inserting users
-2025-10-03 08:48:19 Database created with 5 users successfully
-2025-10-03 08:48:51 A GET request has been received: https://127.0.0.2/users
-2025-10-03 08:48:51 Searching all users
-2025-10-03 08:48:51 Found 5 users
-2025-10-03 08:49:09 A GET request has been received: https://127.0.0.2/users/2
-2025-10-03 08:49:09 Searching user width id: 2
-2025-10-03 08:49:09 User found with id: 2
-2025-10-03 08:49:09 2,Olivia,olivia@gmail.com,2025-10-03 08:48:19
-2025-10-03 08:49:44 A GET request has been received: https://user-service/users/3
-2025-10-03 08:49:44 Searching user width id: 3
-2025-10-03 08:49:44 User found with id: 3
-2025-10-03 08:49:44 3,George,george@gmail.com,2025-10-03 08:48:19
-2025-10-03 08:49:44 A GET request has been received: https://user-service/users/3
-2025-10-03 08:49:44 Searching user width id: 3
-2025-10-03 08:49:44 User found with id: 3
-2025-10-03 08:49:44 3,George,george@gmail.com,2025-10-03 08:48:19
+2025-10-04 10:46:10 Deleting logs in users microservice
+2025-10-04 10:46:10 Logs deleted
+2025-10-04 10:46:11 A GET request has been received: https://127.0.0.2/users/createTable
+2025-10-04 10:46:11 Creating a table and inserting users
+2025-10-04 10:46:11 Database created with 5 users successfully
+2025-10-04 10:46:16 A GET request has been received: https://127.0.0.2/users
+2025-10-04 10:46:16 Searching all users
+2025-10-04 10:46:16 Found 5 users
+2025-10-04 10:47:08 A GET request has been received: https://127.0.0.2/users
+2025-10-04 10:47:08 Searching all users
+2025-10-04 10:47:08 Found 5 users
+2025-10-04 10:50:02 A GET request has been received: https://127.0.0.2/users
+2025-10-04 10:50:02 Searching all users
+2025-10-04 10:50:02 Found 5 users
+2025-10-04 10:50:05 A GET request has been received: https://127.0.0.2/users/qwed
+2025-10-04 10:50:05 Searching user width id: qwed
+2025-10-04 10:50:05 Error to get user with id: qwed
+2025-10-04 10:50:05 Error to execure query
+2025-10-04 10:50:09 A GET request has been received: https://127.0.0.2/users/1
+2025-10-04 10:50:09 Searching user width id: 1
+2025-10-04 10:50:09 User found with id: 1
+2025-10-04 10:50:09 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 10:51:23 A GET request has been received: https://127.0.0.2/users/1
+2025-10-04 10:51:23 Searching user width id: 1
+2025-10-04 10:51:23 User found with id: 1
+2025-10-04 10:51:23 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:08:08 A GET request has been received: https://127.0.0.2/users
+2025-10-04 11:08:08 Searching all users
+2025-10-04 11:08:08 Found 5 users
+2025-10-04 11:08:09 A GET request has been received: https://user-service/users/1
+2025-10-04 11:08:09 Searching user width id: 1
+2025-10-04 11:08:09 User found with id: 1
+2025-10-04 11:08:09 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:08:09 A GET request has been received: https://user-service/users/1
+2025-10-04 11:08:09 Searching user width id: 1
+2025-10-04 11:08:09 User found with id: 1
+2025-10-04 11:08:09 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:08:42 A GET request has been received: https://user-service/users/1
+2025-10-04 11:08:42 Searching user width id: 1
+2025-10-04 11:08:42 User found with id: 1
+2025-10-04 11:08:42 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:08:42 A GET request has been received: https://user-service/users/1
+2025-10-04 11:08:42 Searching user width id: 1
+2025-10-04 11:08:42 User found with id: 1
+2025-10-04 11:08:42 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:09:14 A GET request has been received: https://user-service/users/1
+2025-10-04 11:09:14 Searching user width id: 1
+2025-10-04 11:09:14 User found with id: 1
+2025-10-04 11:09:14 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:09:14 A GET request has been received: https://user-service/users/1
+2025-10-04 11:09:14 Searching user width id: 1
+2025-10-04 11:09:14 User found with id: 1
+2025-10-04 11:09:14 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:09:57 A GET request has been received: https://127.0.0.2/users
+2025-10-04 11:09:57 Searching all users
+2025-10-04 11:09:57 Found 5 users
+2025-10-04 11:09:58 A GET request has been received: https://user-service/users/2
+2025-10-04 11:09:58 Searching user width id: 2
+2025-10-04 11:09:58 User found with id: 2
+2025-10-04 11:09:58 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:09:58 A GET request has been received: https://user-service/users/2
+2025-10-04 11:09:58 Searching user width id: 2
+2025-10-04 11:09:58 User found with id: 2
+2025-10-04 11:09:58 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:10:25 A GET request has been received: https://user-service/users/1
+2025-10-04 11:10:25 Searching user width id: 1
+2025-10-04 11:10:25 User found with id: 1
+2025-10-04 11:10:25 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:10:25 A GET request has been received: https://user-service/users/1
+2025-10-04 11:10:25 Searching user width id: 1
+2025-10-04 11:10:25 User found with id: 1
+2025-10-04 11:10:25 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:11:30 A GET request has been received: https://127.0.0.2/users
+2025-10-04 11:11:30 Searching all users
+2025-10-04 11:11:30 Found 5 users
+2025-10-04 11:11:31 A GET request has been received: https://user-service/users/2
+2025-10-04 11:11:31 Searching user width id: 2
+2025-10-04 11:11:31 User found with id: 2
+2025-10-04 11:11:31 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:11:31 A GET request has been received: https://user-service/users/2
+2025-10-04 11:11:31 Searching user width id: 2
+2025-10-04 11:11:31 User found with id: 2
+2025-10-04 11:11:31 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:11:37 A GET request has been received: https://user-service/users/3
+2025-10-04 11:11:37 Searching user width id: 3
+2025-10-04 11:11:37 User found with id: 3
+2025-10-04 11:11:37 3,George,george@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:11:37 A GET request has been received: https://user-service/users/3
+2025-10-04 11:11:37 Searching user width id: 3
+2025-10-04 11:11:37 User found with id: 3
+2025-10-04 11:11:37 3,George,george@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:13:24 A GET request has been received: https://127.0.0.2/users
+2025-10-04 11:13:24 Searching all users
+2025-10-04 11:13:24 Found 5 users
+2025-10-04 11:13:25 A GET request has been received: https://user-service/users/2
+2025-10-04 11:13:25 Searching user width id: 2
+2025-10-04 11:13:25 User found with id: 2
+2025-10-04 11:13:25 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:13:25 A GET request has been received: https://user-service/users/2
+2025-10-04 11:13:25 Searching user width id: 2
+2025-10-04 11:13:25 User found with id: 2
+2025-10-04 11:13:25 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:13:55 A GET request has been received: https://user-service/users/2
+2025-10-04 11:13:55 Searching user width id: 2
+2025-10-04 11:13:55 User found with id: 2
+2025-10-04 11:13:55 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:13:55 A GET request has been received: https://user-service/users/2
+2025-10-04 11:13:55 Searching user width id: 2
+2025-10-04 11:13:55 User found with id: 2
+2025-10-04 11:13:55 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:14:43 A GET request has been received: https://user-service/users/2
+2025-10-04 11:14:43 Searching user width id: 2
+2025-10-04 11:14:43 User found with id: 2
+2025-10-04 11:14:43 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:14:43 A GET request has been received: https://user-service/users/2
+2025-10-04 11:14:43 Searching user width id: 2
+2025-10-04 11:14:43 User found with id: 2
+2025-10-04 11:14:43 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:14:44 A GET request has been received: https://user-service/users/2
+2025-10-04 11:14:44 Searching user width id: 2
+2025-10-04 11:14:44 User found with id: 2
+2025-10-04 11:14:44 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:14:44 A GET request has been received: https://user-service/users/2
+2025-10-04 11:14:44 Searching user width id: 2
+2025-10-04 11:14:44 User found with id: 2
+2025-10-04 11:14:44 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:14:52 A GET request has been received: https://user-service/users/2
+2025-10-04 11:14:52 Searching user width id: 2
+2025-10-04 11:14:52 User found with id: 2
+2025-10-04 11:14:52 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:14:52 A GET request has been received: https://user-service/users/2
+2025-10-04 11:14:52 Searching user width id: 2
+2025-10-04 11:14:52 User found with id: 2
+2025-10-04 11:14:52 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:15:11 A GET request has been received: https://user-service/users/1
+2025-10-04 11:15:11 Searching user width id: 1
+2025-10-04 11:15:11 User found with id: 1
+2025-10-04 11:15:11 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:15:11 A GET request has been received: https://user-service/users/1
+2025-10-04 11:15:11 Searching user width id: 1
+2025-10-04 11:15:11 User found with id: 1
+2025-10-04 11:15:11 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:15:21 A GET request has been received: https://127.0.0.2/users
+2025-10-04 11:15:21 Searching all users
+2025-10-04 11:15:22 Found 5 users
+2025-10-04 11:15:22 A GET request has been received: https://user-service/users/1
+2025-10-04 11:15:22 Searching user width id: 1
+2025-10-04 11:15:22 User found with id: 1
+2025-10-04 11:15:22 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:15:22 A GET request has been received: https://user-service/users/1
+2025-10-04 11:15:22 Searching user width id: 1
+2025-10-04 11:15:22 User found with id: 1
+2025-10-04 11:15:22 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:16:08 A GET request has been received: https://user-service/users/2
+2025-10-04 11:16:08 Searching user width id: 2
+2025-10-04 11:16:08 User found with id: 2
+2025-10-04 11:16:08 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:16:08 A GET request has been received: https://user-service/users/2
+2025-10-04 11:16:08 Searching user width id: 2
+2025-10-04 11:16:08 User found with id: 2
+2025-10-04 11:16:08 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:16:34 A GET request has been received: https://user-service/users/2
+2025-10-04 11:16:34 Searching user width id: 2
+2025-10-04 11:16:34 User found with id: 2
+2025-10-04 11:16:34 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:16:34 A GET request has been received: https://user-service/users/2
+2025-10-04 11:16:34 Searching user width id: 2
+2025-10-04 11:16:34 User found with id: 2
+2025-10-04 11:16:34 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:19:04 A GET request has been received: https://user-service/users/2
+2025-10-04 11:19:04 Searching user width id: 2
+2025-10-04 11:19:04 User found with id: 2
+2025-10-04 11:19:04 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:19:04 A GET request has been received: https://user-service/users/2
+2025-10-04 11:19:04 Searching user width id: 2
+2025-10-04 11:19:04 User found with id: 2
+2025-10-04 11:19:04 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:19:26 A GET request has been received: https://user-service/users/2
+2025-10-04 11:19:26 Searching user width id: 2
+2025-10-04 11:19:26 User found with id: 2
+2025-10-04 11:19:26 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:19:26 A GET request has been received: https://user-service/users/2
+2025-10-04 11:19:26 Searching user width id: 2
+2025-10-04 11:19:26 User found with id: 2
+2025-10-04 11:19:26 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:19:57 A GET request has been received: https://user-service/users/2
+2025-10-04 11:19:57 Searching user width id: 2
+2025-10-04 11:19:57 User found with id: 2
+2025-10-04 11:19:57 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:19:57 A GET request has been received: https://user-service/users/2
+2025-10-04 11:19:57 Searching user width id: 2
+2025-10-04 11:19:57 User found with id: 2
+2025-10-04 11:19:57 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:20:36 A GET request has been received: https://user-service/users/2
+2025-10-04 11:20:36 Searching user width id: 2
+2025-10-04 11:20:36 User found with id: 2
+2025-10-04 11:20:36 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:20:36 A GET request has been received: https://user-service/users/2
+2025-10-04 11:20:36 Searching user width id: 2
+2025-10-04 11:20:36 User found with id: 2
+2025-10-04 11:20:36 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:20:53 A GET request has been received: https://user-service/users/2
+2025-10-04 11:20:53 Searching user width id: 2
+2025-10-04 11:20:53 User found with id: 2
+2025-10-04 11:20:53 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:20:53 A GET request has been received: https://user-service/users/2
+2025-10-04 11:20:53 Searching user width id: 2
+2025-10-04 11:20:53 User found with id: 2
+2025-10-04 11:20:53 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:06 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:06 Searching user width id: 2
+2025-10-04 11:21:06 User found with id: 2
+2025-10-04 11:21:06 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:06 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:06 Searching user width id: 2
+2025-10-04 11:21:06 User found with id: 2
+2025-10-04 11:21:06 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:31 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:31 Searching user width id: 2
+2025-10-04 11:21:31 User found with id: 2
+2025-10-04 11:21:31 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:31 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:31 Searching user width id: 2
+2025-10-04 11:21:31 User found with id: 2
+2025-10-04 11:21:31 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:32 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:32 Searching user width id: 2
+2025-10-04 11:21:32 User found with id: 2
+2025-10-04 11:21:32 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:32 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:32 Searching user width id: 2
+2025-10-04 11:21:32 User found with id: 2
+2025-10-04 11:21:32 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:37 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:37 Searching user width id: 2
+2025-10-04 11:21:37 User found with id: 2
+2025-10-04 11:21:37 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:37 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:37 Searching user width id: 2
+2025-10-04 11:21:37 User found with id: 2
+2025-10-04 11:21:37 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:42 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:42 Searching user width id: 2
+2025-10-04 11:21:42 User found with id: 2
+2025-10-04 11:21:42 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:42 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:42 Searching user width id: 2
+2025-10-04 11:21:42 User found with id: 2
+2025-10-04 11:21:42 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:42 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:42 Searching user width id: 2
+2025-10-04 11:21:42 User found with id: 2
+2025-10-04 11:21:42 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:21:42 A GET request has been received: https://user-service/users/2
+2025-10-04 11:21:42 Searching user width id: 2
+2025-10-04 11:21:42 User found with id: 2
+2025-10-04 11:21:42 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:13 A GET request has been received: https://user-service/users/2
+2025-10-04 11:22:13 Searching user width id: 2
+2025-10-04 11:22:13 User found with id: 2
+2025-10-04 11:22:13 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:13 A GET request has been received: https://user-service/users/2
+2025-10-04 11:22:13 Searching user width id: 2
+2025-10-04 11:22:13 User found with id: 2
+2025-10-04 11:22:13 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:14 A GET request has been received: https://user-service/users/2
+2025-10-04 11:22:14 Searching user width id: 2
+2025-10-04 11:22:14 User found with id: 2
+2025-10-04 11:22:14 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:14 A GET request has been received: https://user-service/users/2
+2025-10-04 11:22:14 Searching user width id: 2
+2025-10-04 11:22:14 User found with id: 2
+2025-10-04 11:22:14 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:15 A GET request has been received: https://user-service/users/2
+2025-10-04 11:22:15 Searching user width id: 2
+2025-10-04 11:22:15 User found with id: 2
+2025-10-04 11:22:15 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:15 A GET request has been received: https://user-service/users/2
+2025-10-04 11:22:15 Searching user width id: 2
+2025-10-04 11:22:15 User found with id: 2
+2025-10-04 11:22:15 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:16 A GET request has been received: https://user-service/users/2
+2025-10-04 11:22:16 Searching user width id: 2
+2025-10-04 11:22:16 User found with id: 2
+2025-10-04 11:22:16 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:16 A GET request has been received: https://user-service/users/2
+2025-10-04 11:22:16 Searching user width id: 2
+2025-10-04 11:22:16 User found with id: 2
+2025-10-04 11:22:16 2,Olivia,olivia@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:39 A GET request has been received: https://127.0.0.2/users
+2025-10-04 11:22:39 Searching all users
+2025-10-04 11:22:39 Found 5 users
+2025-10-04 11:22:40 A GET request has been received: https://user-service/users/1
+2025-10-04 11:22:40 Searching user width id: 1
+2025-10-04 11:22:40 User found with id: 1
+2025-10-04 11:22:40 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:40 A GET request has been received: https://user-service/users/1
+2025-10-04 11:22:40 Searching user width id: 1
+2025-10-04 11:22:40 User found with id: 1
+2025-10-04 11:22:40 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:42 A GET request has been received: https://user-service/users/1
+2025-10-04 11:22:42 Searching user width id: 1
+2025-10-04 11:22:42 User found with id: 1
+2025-10-04 11:22:42 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 11:22:42 A GET request has been received: https://user-service/users/1
+2025-10-04 11:22:42 Searching user width id: 1
+2025-10-04 11:22:42 User found with id: 1
+2025-10-04 11:22:42 1,Liam,liam@gmail.com,2025-10-04 10:46:11

@@ -18,32 +18,31 @@
             $this->db = new Database();
         }
 
+        /**
+         * Saves the enmail in DB
+         * @param email
+         */
         public function save($email)
         {
             try
             {
                 $this->log->save("Saving user email: " . $email);
-
-                $this->db->executeStatement("INSERT INTO users (email) VALUES ('".$email."');");
-
+                $this->db->insert("INSERT INTO emails (email) VALUES ('".$email."')");
                 $this->log->save("Email saved!");
-
-                return true;
             }
             catch(Exception $e)
             {
-                $this->log->save("Error to send email to: " . $email);
-
-                throw New Exception( $e->getMessage() );
+                $this->log->save("Error save email: " . $email);
+                throw $e;
             }
         }
 
         /**
-         * Creates and load a table with the users
+         * Creates a emails table
          */
         public function createTable()
         {
-            $this->log->save("Creating email table");
+            $this->log->save("Creating the email table");
 
             $dsn = "mysql:host=".DB_HOST.";dbname=".DB_DATABASE_NAME.";charset=utf8mb4";
 
@@ -64,7 +63,7 @@
             } 
             catch (Exception $e) 
             {
-                throw new Exception($e->getMessage());
+                throw $e->getMessage();
             }
         }
     }

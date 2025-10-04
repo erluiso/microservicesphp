@@ -17,7 +17,7 @@
     if ($uri[1] === 'emails') 
     {
         // We create UserModel instance
-        $email = new Email();
+        $emailModel = new Email();
 
         switch ($method) 
         {
@@ -30,42 +30,78 @@
                     //Load table
                     if($uri[2] === "createTable")
                     {  
-                        $email->createTable();
-                        echo "Email table created successfully!";
+                        try
+                        {
+                            $emailModel->createTable();
+                            echo json_encode(
+                                [
+                                    "error" => ["code" => 0,"message" => ""],
+                                    "message" => "Email table created successfully!"
+                                ]
+                            );
+                        }
+                        catch(Exception $e)
+                        {
+                            echo json_encode(
+                                [
+                                    "error" => ["code" => 1,"message" => $e->getMessage()],
+                                    "message" => ""
+                                ]
+                            );
+                        }
                     }
                     else
                     {
-                        $ch = curl_init();
-
-                        curl_setopt($ch, CURLOPT_URL, 'user-service:80/users/'.$uri[2]);
-                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
-
-                        if(curl_exec($ch) === false) 
+                        try
                         {
-                            echo 'Curl error: ' . curl_error($ch);
-                            exit;
-                        } 
-                        else 
-                        {
-                            $response = curl_exec($ch);
+                            $ch = curl_init();
 
-                            curl_close($ch);
+                            curl_setopt($ch, CURLOPT_URL, 'user-service:80/users/'.$uri[2]);
+                            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 
-                            $userEmail = json_decode($response,true);
-                            $userEmail = $userEmail[0]["email"];
-
-                            if($email->save($userEmail))
+                            if(curl_exec($ch) === false) 
                             {
-                                //Here we can call to a function to send emails
-                                $log->save("Emails sended to ".$userEmail);
+                                echo 'Curl error: ' . curl_error($ch);
+                                throw New Exception('Curl error: ' . curl_error($ch));
+                            } 
+                            else 
+                            {
+                                $response = curl_exec($ch);
 
-                                echo "ok";
+                                curl_close($ch);
+
+                                $email = json_decode($response,true);
+                                $email = $email["user"]["email"];
+
+                                try
+                                {
+                                    $emailModel->save($email);
+
+                                    //Here we can call to a function to send emails
+                                    $log->save("Email sended successfully to ".$email);
+
+                                    echo json_encode(
+                                        [
+                                            "error" => ["code" => 0,"message" => ""],
+                                            "message" => "Email sended successfully"
+                                        ]
+                                    );
+                                }
+                                catch(Exception $e)
+                                {
+                                    throw $e;
+                                }
                             }
-                            else
-                            {
-                                echo "ko";
-                            };
+                        }
+                        catch(Exception $e)
+                        {
+                            echo json_encode(
+                                [
+                                    "error" => ["code" => 1,"message" => $e->getMessage()],
+                                    "message" => ""
+                                ]
+                            );
                         }
                     }
                 }
