@@ -306,3 +306,22 @@
 2025-10-04 11:22:42 Searching user width id: 1
 2025-10-04 11:22:42 User found with id: 1
 2025-10-04 11:22:42 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 13:29:59 A GET request has been received: https://127.0.0.2/users
+2025-10-04 13:29:59 Searching all users
+2025-10-04 13:29:59 Found 5 users
+2025-10-04 13:30:00 A GET request has been received: https://user-service/users/1
+2025-10-04 13:30:00 Searching user width id: 1
+2025-10-04 13:30:00 User found with id: 1
+2025-10-04 13:30:00 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 13:30:00 A GET request has been received: https://user-service/users/1
+2025-10-04 13:30:00 Searching user width id: 1
+2025-10-04 13:30:00 User found with id: 1
+2025-10-04 13:30:00 1,Liam,liam@gmail.com,2025-10-04 10:46:11
+2025-10-04 13:30:04 A GET request has been received: https://user-service/users/4
+2025-10-04 13:30:04 Searching user width id: 4
+2025-10-04 13:30:04 User found with id: 4
+2025-10-04 13:30:04 4,Thomas,thomas@gmail.com,2025-10-04 10:46:11
+2025-10-04 13:30:04 A GET request has been received: https://user-service/users/4
+2025-10-04 13:30:04 Searching user width id: 4
+2025-10-04 13:30:04 User found with id: 4
+2025-10-04 13:30:04 4,Thomas,thomas@gmail.com,2025-10-04 10:46:11

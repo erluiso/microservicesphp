@@ -71,8 +71,14 @@
 
                                 curl_close($ch);
 
-                                $email = json_decode($response,true);
-                                $email = $email["user"]["email"];
+                                $response = json_decode($response,true);
+
+                                if($response["error"]["code"] == 1)
+                                {
+                                    throw New Exception("Error to get the user data: " . $uri[2]);
+                                }
+
+                                $email = $response["user"]["email"];
 
                                 try
                                 {

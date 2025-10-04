@@ -4,3 +4,11 @@
 2025-10-04 11:22:42 Saving user email: liam@gmail.com
 2025-10-04 11:22:42 Email saved!
 2025-10-04 11:22:42 Emails sended to liam@gmail.com
+2025-10-04 13:30:00 A GET request has been received: https://127.0.0.3/emails/1
+2025-10-04 13:30:00 Saving user email: liam@gmail.com
+2025-10-04 13:30:00 Email saved!
+2025-10-04 13:30:00 Email sended successfully to liam@gmail.com
+2025-10-04 13:30:04 A GET request has been received: https://127.0.0.3/emails/4
+2025-10-04 13:30:04 Saving user email: thomas@gmail.com
+2025-10-04 13:30:04 Email saved!
+2025-10-04 13:30:04 Email sended successfully to thomas@gmail.com
