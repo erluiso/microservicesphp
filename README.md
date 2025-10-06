@@ -5,6 +5,8 @@ This repository contains a small project to see how the microservices work.
 
 You will need to install `Docker` (Docker compose) to launch the diferents services to start and to test it.
 
+![Alt text](screenshot.png)
+
 ## About the script
 
 This script launch three services. The first one is the main app, the second one is a microservice which manage users, and the third one is a microservice to forwarding of emails.
